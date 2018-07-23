@@ -1,0 +1,9 @@
+FROM node:latest
+
+RUN mkdir -p /var/tmp
+
+WORKDIR /var/tmp
+
+COPY ./src .
+
+CMD [ "node", "server.js" ]
